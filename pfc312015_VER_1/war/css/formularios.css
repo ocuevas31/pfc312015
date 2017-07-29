@@ -1,0 +1,63 @@
+
+
+form
+{
+background: #580000;
+-webkit-border-radius:10px;
+-moz-border-radius:10px;
+border-radius:10px;
+
+
+}
+fieldset
+{
+margin: 10;
+padding: 0;
+background: #960E1B;
+border: 1px solid #000000;
+-webkit-border-radius:10px;
+-moz-border-radius:10px;
+border-radius:10px;
+
+}
+
+legend
+{
+
+padding:.2em;
+background-color:#680000;
+font-weight:bold;
+color:#000000;
+border:1px solid #000000;
+
+-webkit-border-radius:10px;
+-moz-border-radius:10px;
+border-radius:10px;
+
+}
+
+
+select
+{
+border: 1px solid #000000;
+font-weight:bold;
+
+background-color:#FFFFFF:
+
+}
+
+select:focus
+{
+font-weight:bold;
+color: #000000;
+background-color:#EEEEEE;
+
+
+}
+
+
+input [type="submit"]
+{
+margin:0 0 120px;
+
+}

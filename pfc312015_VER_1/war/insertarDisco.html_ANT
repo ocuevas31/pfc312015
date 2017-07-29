@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    
+    <title>Insertar Disco de un Grupo</title>
+  <link rel="stylesheet" type="text/css" href="css/formularios.css" />
+  </head>
+
+  <body>
+ 
+ 
+ <h1>Inserta un disco a un grupo.</h1>
+ <form action="insertarDisco.jsp" method="post">
+  nombre Disco:
+  <input type="text" name="nombreDisco" value="" required/>
+  
+ nombre Grupo:
+  <input type="text" name="nombreGrupo" value="" required/>
+  
+ 
+ <br>
+  <input type="submit" value="INSERTAR Disco de tal Grupo" />
+</form>
+ 
+ 
+ 
+  </body>
+</html>

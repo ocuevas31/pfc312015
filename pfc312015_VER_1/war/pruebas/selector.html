@@ -1,0 +1,119 @@
+<!doctype html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>selector</title>
+ <link rel="stylesheet" type="text/css" href="../css/formularios.css" />   
+  </head>
+
+
+
+
+<body onload="iniSelector()">
+
+
+<script>
+
+function iniSelector()
+{
+	
+	formulario.entrada.value=formulario.nombreSelector.value;
+	
+	
+}
+
+</script>
+
+
+<script>
+
+function funcion()
+{
+	
+	
+//alert("Hola "+formulario.nombreSelector.value);	
+	
+	formulario.entrada.value=formulario.nombreSelector.value;
+	
+	formulario.nombreSelector2.options[1]=new Option("texto","valor","1");
+	formulario.nombreSelector2.options[2]=new Option("texto2","valor2","0");
+	formulario.nombreSelector2.options[3]=new Option("texto3","valor3","0");
+}
+
+
+function funcion2()
+{
+	
+	
+alert("Hola "+formulario.nombreSelector2.value);	
+	
+	//formulario.entrada.value=formulario.nombreSelector.value;
+}
+
+
+
+</script>
+
+
+
+<form name="formulario" action="" method="post">
+
+	<fieldset>
+		<legend>PRUEBA PARA UN SELECTOR DE UN FORMULARIO</legend>
+		<p>
+		
+		<label> Etiqueta: </label>
+		
+		<select name="nombreSelector" onchange="funcion()">
+		<option value="valoropcion1"> valorOpcion1</option>
+		<option value="valoropcion2"> valorOpcion2</option>
+		<option value="valoropcion3"> valorOpcion3</option>
+		</select>		
+		
+		</p>
+		
+		
+		<p>
+		
+		<label> Etiqueta 2 dep de la 1: </label>
+		
+		<select name="nombreSelector2" onchange="funcion2()">
+		<option value="valoropcion10"> valorOpcion10</option>
+
+		</select>		
+		
+		</p>
+		
+		
+		
+		
+		<input name="entrada" />
+		
+	</fieldset>
+	
+	<p> <input type="submit" value="Enviar" /> </p>
+</form>
+
+
+
+
+<form enctype="multipart/form-data" method="post" action="imagen.jsp">
+
+<input type="file"  name="imagen">
+<p> <input type="submit" value="Enviar"> </p>
+</form>
+
+
+
+  </body>
+
+<hr>
+<p>
+http://www.caricatos.net/articulos/formularios.php
+</p>
+<hr>
+<p>
+para imagenes en el data Store jdo app engine.
+http://blog.mbonell.com/2011/09/manejo-de-imagenes-en-google-app-engine-java-blobstore/
+</p>
+</html>

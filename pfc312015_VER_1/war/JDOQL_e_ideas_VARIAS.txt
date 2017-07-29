@@ -1,0 +1,42 @@
+
+OJO COPIAS DE SEGURIDAD y versiones.
+
+
+DATA STORE JAVA JDO APP ENGINE
+
+http://www.datanucleus.org/products/datanucleus/jdo/jdoql.html
+JDOQL:
+
+select y no poner * ni naaaa
+no se pone AND sino &&
+EL OR (||) solo vale para condiciones de igualdad.
+
+
+SELECT  FROM com.pfc.datos.Employee where n>2 && n<4
+SELECT FROM com.pfc.datos.Employee where (n==2 || n==4) 
+
+
+
+JSP:
+
+ojo con los jsp cualquier string mal o llave o lo que sea y te vuelves loco, cambios poco y poco y servlets mejor q jsp?
+
+
+
+version 1:
+inserta grupos.
+busca grupos
+
+inserta discos de un grupo
+busca discos de un grupo.
+
+
+-------------------------------------------------------------------------------------
+
+MEJOJRAS:
+ mirar bien lo de las claves, Key.
+ getOBjectbyID.....
+ 
+crear helper que busquen grupos, discos de tal grupo, existe grupo, gruoAsignado a tal Admin.
+
+

@@ -1,0 +1,175 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Insertar Cancion en el DataStore</title>
+</head>
+
+
+<body onload="iniSelector()">
+
+
+
+<script>
+
+document.write('Hola');
+
+
+var arrayGrupos=new Array();
+var arrayDiscos=new Array();
+
+arrayGrupos[0]="gnr";
+arrayDiscos[0]=new Array();
+arrayGrupos[1]="metallica";
+arrayDiscos[1]=new Array();
+arrayDiscos[1][0]="kill em all";
+arrayDiscos[1][1]="and justice for all";
+arrayGrupos[2]="rosendo";
+arrayDiscos[2]=new Array();
+
+
+
+function iniSelector()
+{
+	
+	//alert("dep");
+	
+	
+}
+
+</script>
+
+
+
+
+
+
+
+<script>
+
+function funcion(nG)
+{
+	
+	
+alert(nG);	
+	//ya esta seleccionado el grupo vamos a rellenar el selector de Disco
+	//formulario.entrada.value=formulario.nombreSelector.value;
+	
+	
+	
+
+	var s=document.formulario.tituloDisco; 
+
+	
+	
+//vaciar el select
+	if(s.options){
+		 for (m=s.options.length-1;m>=0;m--)
+		s.options[m]=null;
+		 }
+	
+	
+	var i;
+
+	var pos=formulario.nombreGrupo.selectedIndex;
+	
+for (i=0;i<arrayDiscos[pos].length;i++)
+{
+	 var option=document.createElement("option"); 
+	 option.value=arrayDiscos[pos][i]; 
+	 option.text=arrayDiscos[pos][i]; 
+
+	 s.appendChild(option) // y aqui lo añadiste
+}
+
+
+	/////
+
+}
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <h1>Inserta una cancion a un disco.</h1>
+
+ <form name="formulario" action="insertarCancion.jsp" method="post">
+
+  Titulo Cancion:
+  <input type="text" name="tituloCancion" value="" />
+
+<br>  
+ nombre Grupo:
+
+
+
+<script>
+var i=0;
+i++
+document.write(i);
+
+
+</script>
+
+
+
+
+
+<select name="nombreGrupo" onchange="funcion(formulario.nombreGrupo.value)">
+
+<script>
+var i;
+
+for (i=0;i<arrayGrupos.length;i++)
+{
+	document.write('<option value="');
+	document.write(arrayGrupos[i]);
+	document.write('">'+arrayGrupos[i]+'</option>');
+}
+
+
+
+</script>
+
+</select>
+
+ 
+ <br>
+Titulo Disco: 
+ <select name="tituloDisco">
+ 
+ </select>
+ 
+ 
+ <br>
+ letra:
+ <textarea name="letra" >...</textarea> 
+ 
+ 
+ <br>
+ <br>
+  <input type="submit" value="INSERTAR Disco de tal Grupo" />
+</form>
+
+
+
+
+
+
+</body>
+</html>

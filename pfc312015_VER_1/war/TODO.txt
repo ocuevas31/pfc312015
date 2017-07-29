@@ -1,0 +1,17 @@
+ x	Mirar en si estan ok los datos:https://appengine.google.com/datastore/
+  	crear metodos para buscar grupos, discos, etc. pero primero mirar lo de las KEys.....
+ 	lista desplegable que saque los datos del Data Store.   Lista desplegable con los grupos existentes y tb para los discos de tal grupo.
+ 	
+ 	
+ 	
+ 	
+ 	Autofocus en los formularios por ej en insertar grupo
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	idea:
+ 	
+ 	
+ 	hacer un enun con los dististos mens a enviar y array con todos esos textos y para mas idiomas poner mas arrays o  matriz...

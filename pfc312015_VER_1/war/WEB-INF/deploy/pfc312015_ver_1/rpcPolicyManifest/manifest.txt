@@ -1,0 +1,3 @@
+# Module pfc312015_ver_1
+# RPC service class, partial path of RPC policy file
+com.pfc.client.GreetingService, B783D54533FC1FC0B18D08AE89B1EB3E.gwt.rpc

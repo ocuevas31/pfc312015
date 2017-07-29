@@ -1,0 +1,164 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Borrar Cancion del DataStore</title>
+
+<link rel="stylesheet" type="text/css" href="/css/formularios.css" />
+</head>
+
+
+<body onload="iniSelector()">
+
+	<script>
+		function iniSelector() {
+
+			alert("Cargado");
+			funcion();
+		}
+	</script>
+
+
+
+
+
+
+
+	<script>
+		function funcion() {
+
+			alert("PAisa");
+			//ya esta seleccionado el grupo vamos a rellenar el selector de Disco
+			//formulario.entrada.value=formulario.nombreSelector.value;
+
+			var s = document.formulario.tituloDisco;
+
+			//vaciar el select
+			if (s.options) {
+				for (m = s.options.length - 1; m >= 0; m--)
+					s.options[m] = null;
+			}
+
+			var pos = formulario.tituloDisco.selectedIndex;
+
+			/*for (i=0;i<arrayDiscos[pos].length;i++)
+			 {
+			 var option=document.createElement("option"); 
+			 option.value=arrayDiscos[pos][i]; 
+			 option.text=arrayDiscos[pos][i]; 
+
+			 s.appendChild(option) // y aqui lo añadiste
+			 }
+			 */
+
+			for (i = 0; i < 3; i++) {
+				var option = document.createElement("option");
+				option.value = "tal ";
+				option.text = "tal  ";
+
+				s.appendChild(option)
+			}
+
+		}
+
+		function funcionDisco() {
+
+			alert("Hola");
+
+			var s = document.formulario.tituloCancion;
+
+			//vaciar el select
+			if (s.options) {
+				for (m = s.options.length - 1; m >= 0; m--)
+					s.options[m] = null;
+			}
+
+			var pos = formulario.tituloDisco.selectedIndex;
+
+			/*for (i=0;i<arrayDiscos[pos].length;i++)
+			{
+			 var option=document.createElement("option"); 
+			 option.value=arrayDiscos[pos][i]; 
+			 option.text=arrayDiscos[pos][i]; 
+
+			 s.appendChild(option) // y aqui lo añadiste
+			}
+			 */
+
+			for (i = 0; i < 3; i++) {
+				var option = document.createElement("option");
+				option.value = "cual ";
+				option.text = "cual  ";
+
+				s.appendChild(option) // y aqui lo añadiste
+			}
+
+		}
+	</script>
+
+
+
+
+
+
+
+
+
+
+
+
+	<form name="formulario" action="borrarCancion.jsp" method="post">
+
+		<fieldset>
+			<legend>Borrar una Cancion de un Grupo de un Disco</legend>
+
+			<p>
+				<label> nombre Grupo: </label> <select name="nombreGrupo"
+					onchange="funcion()">
+
+					<script>
+						var i;
+
+						for (i = 0; i < 3; i++) {
+							document.write('<option value="');
+							document.write(i + '');
+							document.write('">' + i + '</option>');
+						}
+					</script>
+
+				</select>
+
+			</p>
+
+			<p>
+				<label>Titulo Disco:</label> <select name="tituloDisco"
+					onchange="funcionDisco()">
+
+				</select>
+
+
+			</p>
+
+
+			<p>
+				<label>Titulo Cancion:</label> <select name="tituloCancion">
+
+				</select>
+
+
+			</p>
+
+		</fieldset>
+
+		<br> <br> <input type="submit" value="BORRAR DISCO" />
+	</form>
+
+
+
+
+
+
+</body>
+</html>

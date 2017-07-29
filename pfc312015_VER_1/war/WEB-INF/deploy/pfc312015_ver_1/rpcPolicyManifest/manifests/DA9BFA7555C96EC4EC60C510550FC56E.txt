@@ -1,0 +1,2 @@
+serviceClass: com.pfc.client.GreetingService
+path: B783D54533FC1FC0B18D08AE89B1EB3E.gwt.rpc

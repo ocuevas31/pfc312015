@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>buscar por gql</title>
+  
+  </head>
+
+  <body>
+ 
+ <!--  
+ https://cloud.google.com/appengine/docs/python/datastore/gqlreference#Examples
+  -->
+ 
+ 
+ <!--  ojo tb vale sin comillas -->
+ 
+ <form action="gqlbuscar.jsp" method="post">
+  sentencia GQL (por ejemplo: SELECT  FROM com.pfc.datos.Employee o  SELECT  FROM com.pfc.datos.Employee where firstName=='oscar'
+  SELECT  FROM com.pfc.datos.Employee where firstName=='oscar'  
+  SELECT  FROM com.pfc.datos.Employee where n>2 && n<4
+  SELECT  FROM com.pfc.datos.Employee where firstName=='oscar'  && lastName=='cuevas')
+  	
+  <input type="text" name="sentencia" value="" size=100 />
+ 
+
+ <br>
+ <br>
+  <input type="submit" value="Buscar GQL" />
+</form>
+ 
+ 
+ 
+  </body>
+</html>
